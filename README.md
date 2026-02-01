@@ -1,2 +1,3 @@
-# eduyeves-dev
-Mi portfolio como desarrollador web
+# EduYeves Dev
+
+Mi portfolio como desarrollador web.
