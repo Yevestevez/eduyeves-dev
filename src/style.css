@@ -3,10 +3,10 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-    --color-text: oklch(73.904% 0.08094 281.042);
+    --color-text: oklch(74.912% 0.07431 276.68);
     --color-accent: oklch(87.614% 0.10404 161.795);
-    --grad-start: oklch(19.157% 0.05425 273.828);
-    --grad-end: oklch(14.602% 0.04847 287.835);
+    --grad-start: oklch(19.414% 0.05256 272.442);
+    --grad-end: oklch(14.479% 0.04857 285.531);
 }
 
 @layer base {
