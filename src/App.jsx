@@ -12,7 +12,7 @@ function App() {
     if (savedTheme === 'dark') document.documentElement.classList.add('dark');
 
     return (
-        <div className="bg-linear-to-b from-[#0C0C21] to-[#130821] h-screen text-[#A4A7D8]">
+        <div className="bg-linear-to-b from-[#0C0C21] to-[#130821] min-h-screen text-[#A4A7D8]">
             <aside>
                 <button
                     onClick={toggleDarkMode}
@@ -22,6 +22,7 @@ function App() {
                 </button>
                 <button disabled>Idioma</button>
             </aside>
+
             <header>
                 <hgroup>
                     <h1 className="text-[#A4A7D8] font-bold">Edu Yeves</h1>
@@ -49,6 +50,7 @@ function App() {
                     </ul>
                 </nav>
             </header>
+
             <main>
                 <section>
                     <h2>SOBRE MÍ</h2>
@@ -78,19 +80,58 @@ function App() {
                         placerat.
                     </p>
                 </section>
+
                 <section>
                     <h2>PROYECTOS</h2>
+                    {/* Componentes */}
+                    <article>
+                        <header>
+                            <h3>Vegazetas</h3>
+                            <a href="https://vegazetas.netlify.app">↗️</a>
+                            <p>
+                                Aplicación web para organizar recetas. La
+                                concebí y desarrollé desde cero: prototipos en
+                                Figma, front-end en React y back-end en
+                                Node/Express con base de datos MongoDB. Mi
+                                objetivo fue transformar una idea en un producto
+                                usable, con foco en UI/UX y buenas prácticas de
+                                código.
+                            </p>
+                        </header>
+                        <details>
+                            <summary>Más info...</summary>
+                            <p>
+                                Desarrollo de una SPA (Single Page Application)
+                                en React Creación de una API RESTful con Node.js
+                                y Express (JSON) Base de datos en MongoDB con
+                                Mongoose Autenticación segura con JWT Protección
+                                de rutas con React Router Gestión de estado con
+                                Context API Pruebas automatizadas con Mocha/Chai
+                                Diseño responsive con Tailwind CSS
+                                Restablecimiento de contraseñas con Nodemailer
+                                Despliegues en producción con Render y Netlify
+                                Control de versiones con Git/GitHub siguiendo
+                                GitFlow Integración de IA en el desarrollo de
+                                nuevas funcionalidades
+                            </p>
+                            <img src="../favicon-code.svg" alt="#" />
+                        </details>
+                    </article>
                 </section>
+
                 <section>
                     <h2>EXPERIENCIA</h2>
                 </section>
+
                 <section>
                     <h2>FORMACIÓN</h2>
                 </section>
+
                 <section>
                     <h2>CONTACTO</h2>
                 </section>
             </main>
+
             <footer></footer>
         </div>
     );
