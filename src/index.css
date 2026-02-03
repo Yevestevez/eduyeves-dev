@@ -1,3 +1,20 @@
 @import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-text: oklch(73.904% 0.08094 281.042);
+    --color-accent: oklch(87.614% 0.10404 161.795);
+    --grad-start: oklch(19.157% 0.05425 273.828);
+    --grad-end: oklch(14.602% 0.04847 287.835);
+}
+
+@layer base {
+    body {
+        font-family: 'Fira Code', monospace;
+    }
+}
+
+.bg-gradient {
+    background: linear-gradient(to bottom, var(--grad-start), var(--grad-end));
+}

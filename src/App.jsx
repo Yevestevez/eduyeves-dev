@@ -12,7 +12,7 @@ function App() {
     if (savedTheme === 'dark') document.documentElement.classList.add('dark');
 
     return (
-        <div className="bg-linear-to-b from-[#0C0C21] to-[#130821] min-h-screen text-[#A4A7D8]">
+        <div className="bg-gradient min-h-screen text-text">
             <aside>
                 <button
                     onClick={toggleDarkMode}
@@ -25,14 +25,17 @@ function App() {
 
             <header>
                 <hgroup>
-                    <h1 className="text-[#A4A7D8] font-bold">Edu Yeves</h1>
+                    <h1 className="font-extrabold text-4xl">Edu Yeves</h1>
                     <p>Junior front-end developer</p>
                 </hgroup>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                    Consectetur. Ex sapien vitae pellentesque sem placerat in
-                    id. Placerat in id cursus mi pretium tellus duis. Pretium
-                    tellus duis convallis tempus leo eu aenean.
+                    Consectetur. Ex sapien vitae{' '}
+                    <span className="text-accent">
+                        pellentesque sem placerat in id.
+                    </span>{' '}
+                    Placerat in id cursus mi pretium tellus duis. Pretium tellus
+                    duis convallis tempus leo eu aenean.
                 </p>
                 <ul>
                     <li>LinkedIn</li>
