@@ -35,7 +35,7 @@ function App() {
                     tellus duis convallis tempus leo eu aenean.
                 </p>
                 <ul>
-                    <li>Linkedin</li>
+                    <li>LinkedIn</li>
                     <li>Github</li>
                     <li>Email</li>
                 </ul>
@@ -52,7 +52,7 @@ function App() {
             </header>
 
             <main>
-                <section>
+                <section aria-labelledby="Sobre mí">
                     <h2>SOBRE MÍ</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipiscing elit.
@@ -81,7 +81,7 @@ function App() {
                     </p>
                 </section>
 
-                <section>
+                <section aria-label="Proyectos">
                     <h2>PROYECTOS</h2>
                     {/* Componentes */}
                     <article>
@@ -100,34 +100,51 @@ function App() {
                         </header>
                         <details>
                             <summary>Más info...</summary>
-                            <p>
-                                Desarrollo de una SPA (Single Page Application)
-                                en React Creación de una API RESTful con Node.js
-                                y Express (JSON) Base de datos en MongoDB con
-                                Mongoose Autenticación segura con JWT Protección
-                                de rutas con React Router Gestión de estado con
-                                Context API Pruebas automatizadas con Mocha/Chai
-                                Diseño responsive con Tailwind CSS
-                                Restablecimiento de contraseñas con Nodemailer
-                                Despliegues en producción con Render y Netlify
-                                Control de versiones con Git/GitHub siguiendo
-                                GitFlow Integración de IA en el desarrollo de
-                                nuevas funcionalidades
-                            </p>
+                            <ul>
+                                <li>
+                                    Desarrollo de una SPA (Single Page
+                                    Application) en React Creación de una API
+                                    RESTful con Node.js y Express (JSON)
+                                </li>
+                                <li>Base de datos en MongoDB con Mongoose</li>
+                                <li>
+                                    Autenticación segura con JWT Protección de
+                                    rutas con React Router Gestión de estado con
+                                    Context API
+                                </li>
+                                <li>Pruebas automatizadas con Mocha/Chai</li>
+                                <li>Diseño responsive con Tailwind CSS</li>
+                                <li>
+                                    Restablecimiento de contraseñas con
+                                    Nodemailer
+                                </li>
+                                <li>
+                                    Despliegues en producción con Render y
+                                    Netlify
+                                </li>
+                                <li>
+                                    Control de versiones con Git/GitHub
+                                    siguiendo GitFlow
+                                </li>
+                                <li>
+                                    Integración de IA en el desarrollo de nuevas
+                                    funcionalidades
+                                </li>
+                            </ul>
                             <img src="../favicon-code.svg" alt="#" />
                         </details>
                     </article>
                 </section>
 
-                <section>
+                <section aria-label="Experiencia">
                     <h2>EXPERIENCIA</h2>
                 </section>
 
-                <section>
+                <section aria-label="Formación">
                     <h2>FORMACIÓN</h2>
                 </section>
 
-                <section>
+                <section aria-label="Contacto">
                     <h2>CONTACTO</h2>
                 </section>
             </main>
