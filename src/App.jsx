@@ -12,7 +12,7 @@ function App() {
     if (savedTheme === 'dark') document.documentElement.classList.add('dark');
 
     return (
-        <div className="bg-gradient min-h-screen text-text p-20">
+        <div className="bg-gradient min-h-screen primary-dark-color p-20">
             <aside>
                 <button
                     onClick={toggleDarkMode}
@@ -28,7 +28,7 @@ function App() {
                     <h1 className="font-extrabold text-8xl font-[inconsolata]">
                         Edu Yeves
                     </h1>
-                    <p className="font-semibold">
+                    <p className="font-semibold text-xl">
                         Desarrollador web junior y diseñador gráfico
                     </p>
                 </hgroup>
