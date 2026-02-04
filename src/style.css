@@ -18,7 +18,3 @@
 .bg-gradient {
     background: linear-gradient(to bottom, var(--grad-start), var(--grad-end));
 }
-
-.primary-dark-color {
-    color: var(--color-primary-dark);
-}

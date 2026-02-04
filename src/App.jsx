@@ -1,3 +1,6 @@
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
+import { MdEmail } from 'react-icons/md';
+
 function App() {
     function toggleDarkMode() {
         const root = document.documentElement;
@@ -12,7 +15,7 @@ function App() {
     if (savedTheme === 'dark') document.documentElement.classList.add('dark');
 
     return (
-        <div className="bg-gradient min-h-screen primary-dark-color p-20">
+        <div className="bg-gradient min-h-screen text-primary-dark p-20">
             <aside>
                 <button
                     onClick={toggleDarkMode}
@@ -23,37 +26,98 @@ function App() {
                 <button disabled>Idioma</button>
             </aside>
 
-            <header>
-                <hgroup>
-                    <h1 className="font-extrabold text-8xl font-[inconsolata]">
+            <header className="py-20 flex flex-col gap-10">
+                <hgroup className="flex flex-col gap-14">
+                    <h1 className="font-extrabold text-9xl font-[inconsolata] leading-26 tracking-tight">
                         Edu Yeves
                     </h1>
-                    <p className="font-semibold text-xl">
+                    <p className="font-semibold text-2xl">
                         Desarrollador web junior y diseñador gráfico
                     </p>
                 </hgroup>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                    Consectetur. Ex sapien vitae{' '}
-                    <span className="text-accent">
-                        pellentesque sem placerat in id.
-                    </span>{' '}
-                    Placerat in id cursus mi pretium tellus duis. Pretium tellus
-                    duis convallis tempus leo eu aenean.
-                </p>
-                <ul>
-                    <li>LinkedIn</li>
-                    <li>Github</li>
-                    <li>Email</li>
+                <div className="flex flex-col gap-3">
+                    <p>
+                        Desarrollo y diseño web de la A a la Z, desde la idea
+                        hasta el despliegue.
+                    </p>
+                    <p>
+                        Construyo webs accesibles y escalables de código limpio,
+                        siempre con un ojo puesto en UI/UX
+                    </p>
+                </div>
+                <ul className="flex gap-8 items-center py-5">
+                    <li>
+                        <a href="#">
+                            <BsLinkedin className="size-10" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" aria-label="GitHub">
+                            <BsGithub className="size-10" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <MdEmail className="size-14" />
+                        </a>
+                    </li>
                 </ul>
-                <nav>
-                    <ul>
-                        <li>SOBRE MÍ</li>
-                        <li>PROYECTOS</li>
-                        <li>EXPERIENCIA</li>
-                        <li>FORMACIÓN</li>
-                        <li>HABILIDADES TÉCNICAS</li>
-                        <li>CONTACTO</li>
+                <nav className="py-5">
+                    <ul className="flex flex-col gap-5">
+                        <li>
+                            <a
+                                href="#"
+                                className="flex items-center gap-5 font-bold"
+                            >
+                                <div className="w-70 h-1 bg-primary-dark"></div>
+                                <span>EXPERIENCIA</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                className="flex items-center gap-5 opacity-60"
+                            >
+                                <div className="w-30 h-0.5 bg-primary-dark"></div>
+                                <span>EXPERIENCIA</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                className="flex items-center gap-5 opacity-60"
+                            >
+                                <div className="w-30 h-0.5 bg-primary-dark"></div>
+                                <span>EXPERIENCIA</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                className="flex items-center gap-5 opacity-60"
+                            >
+                                <div className="w-30 h-0.5 bg-primary-dark"></div>
+                                <span>EXPERIENCIA</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                className="flex items-center gap-5 opacity-60"
+                            >
+                                <div className="w-30 h-0.5 bg-primary-dark"></div>
+                                <span>EXPERIENCIA</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                className="flex items-center gap-5 opacity-60"
+                            >
+                                <div className="w-30 h-0.5 bg-primary-dark"></div>
+                                <span>EXPERIENCIA</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </header>
