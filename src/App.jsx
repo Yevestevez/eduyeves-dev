@@ -15,7 +15,7 @@ function App() {
     if (savedTheme === 'dark') document.documentElement.classList.add('dark');
 
     return (
-        <div className="bg-gradient min-h-screen text-primary-dark p-20">
+        <div className="bg-gradient min-h-screen text-primary-dark p-10">
             <aside>
                 <button
                     onClick={toggleDarkMode}
@@ -26,12 +26,12 @@ function App() {
                 <button disabled>Idioma</button>
             </aside>
 
-            <header className="py-20 flex flex-col gap-10">
-                <hgroup className="flex flex-col gap-14">
-                    <h1 className="font-extrabold text-9xl font-[inconsolata] leading-26 tracking-tight">
+            <header className="py-10 flex flex-col gap-10">
+                <hgroup className="flex flex-col gap-6">
+                    <h1 className="font-extrabold text-6xl font-[inconsolata]">
                         Edu Yeves
                     </h1>
-                    <p className="font-semibold text-2xl">
+                    <p className="font-semibold text-lg">
                         Desarrollador web junior y diseñador gráfico
                     </p>
                 </hgroup>
@@ -45,31 +45,31 @@ function App() {
                         siempre con un ojo puesto en UI/UX
                     </p>
                 </div>
-                <ul className="flex gap-8 items-center py-5">
+                <ul className="flex gap-6 items-center py-5">
                     <li>
-                        <a href="#">
-                            <BsLinkedin className="size-10" />
+                        <a href="#" title="Linkedin" aria-label="Linkedin">
+                            <BsLinkedin className="size-8" />
                         </a>
                     </li>
                     <li>
-                        <a href="#" aria-label="GitHub">
-                            <BsGithub className="size-10" />
+                        <a href="#" title="GitHub" aria-label="GitHub">
+                            <BsGithub className="size-8" />
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <MdEmail className="size-14" />
+                        <a href="#" title="Email" aria-label="email">
+                            <MdEmail className="size-12" />
                         </a>
                     </li>
                 </ul>
-                <nav className="py-5">
-                    <ul className="flex flex-col gap-5">
+                <nav>
+                    <ul className="flex flex-col gap-5 text-sm">
                         <li>
                             <a
                                 href="#"
                                 className="flex items-center gap-5 font-bold"
                             >
-                                <div className="w-70 h-1 bg-primary-dark"></div>
+                                <div className="w-60 h-1 bg-primary-dark"></div>
                                 <span>EXPERIENCIA</span>
                             </a>
                         </li>
