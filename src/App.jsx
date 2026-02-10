@@ -1,27 +1,21 @@
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
-import { MdEmail } from 'react-icons/md';
+import { MdEmail, MdLightMode, MdDarkMode } from 'react-icons/md';
+import { FaBehanceSquare } from 'react-icons/fa';
+
+import { useTheme } from './hooks/useTheme';
 
 function App() {
-    function toggleDarkMode() {
-        const root = document.documentElement;
-        root.classList.toggle('dark');
-        localStorage.setItem(
-            'theme',
-            root.classList.contains('dark') ? 'dark' : 'light',
-        );
-    }
-
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') document.documentElement.classList.add('dark');
+    const { isDarkMode, toggleTheme } = useTheme();
 
     return (
-        <div className="bg-gradient min-h-screen text-text p-10">
+        <div className="min-h-screen p-10">
             <aside>
                 <button
-                    onClick={toggleDarkMode}
-                    className="px-4 py-2 bg-blue-500 text-white rounded"
+                    type="button"
+                    onClick={toggleTheme}
+                    className="px-4 py-2"
                 >
-                    Cambiar tema
+                    {isDarkMode ? <MdLightMode /> : <MdDarkMode />}
                 </button>
                 <button disabled>Idioma</button>
             </aside>
@@ -54,6 +48,11 @@ function App() {
                     <li>
                         <a href="#" title="GitHub" aria-label="GitHub">
                             <BsGithub className="size-6" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="GitHub" aria-label="GitHub">
+                            <FaBehanceSquare className="size-7" />
                         </a>
                     </li>
                     <li>

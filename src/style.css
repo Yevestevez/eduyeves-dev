@@ -1,15 +1,6 @@
 @import 'tailwindcss';
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
-    /* --color-primary-dark: oklch(74.912% 0.07431 276.68);
-    --color-accent: oklch(87.614% 0.10404 161.795);
-    --grad-start: oklch(19.414% 0.05256 272.442);
-    --grad-end: oklch(14.479% 0.04857 285.531); */
-
-    --color-text: light-dark(red, black);
-
     --color-space-indigo-50: oklch(94.93% 0.015 286.12);
     --color-space-indigo-100: oklch(89.54% 0.031 285.75);
     --color-space-indigo-200: oklch(79.11% 0.062 284.89);
@@ -72,11 +63,35 @@
 }
 
 @layer base {
+    :root {
+        --color-text: var(--color-space-indigo-900);
+        --color-bg: var(--color-pale-sky-100);
+    }
+
+    .dark {
+        --color-text: var(--color-pale-sky-100);
+        --color-bg: var(--color-space-indigo-900);
+    }
+
     body {
         font-family: 'Fira Code' monospace;
     }
 }
 
-.bg-gradient {
-    background: linear-gradient(to bottom, var(--grad-start), var(--grad-end));
+@layer utilities {
+    .text-primary {
+        color: var(--color-text);
+    }
+    .bg-primary {
+        background-color: var(--color-bg);
+    }
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+button:hover {
+    color: var(--color-emerald-500);
 }
