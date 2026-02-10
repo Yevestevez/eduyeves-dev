@@ -15,7 +15,7 @@ function App() {
     if (savedTheme === 'dark') document.documentElement.classList.add('dark');
 
     return (
-        <div className="bg-gradient min-h-screen text-primary-dark p-10">
+        <div className="bg-gradient min-h-screen text-text p-10">
             <aside>
                 <button
                     onClick={toggleDarkMode}
@@ -48,17 +48,17 @@ function App() {
                 <ul className="flex gap-6 items-center py-5">
                     <li>
                         <a href="#" title="Linkedin" aria-label="Linkedin">
-                            <BsLinkedin className="size-8" />
+                            <BsLinkedin className="size-6" />
                         </a>
                     </li>
                     <li>
                         <a href="#" title="GitHub" aria-label="GitHub">
-                            <BsGithub className="size-8" />
+                            <BsGithub className="size-6" />
                         </a>
                     </li>
                     <li>
                         <a href="#" title="Email" aria-label="email">
-                            <MdEmail className="size-12" />
+                            <MdEmail className="size-10" />
                         </a>
                     </li>
                 </ul>
@@ -70,7 +70,16 @@ function App() {
                                 className="flex items-center gap-5 font-bold"
                             >
                                 <div className="w-60 h-1 bg-primary-dark"></div>
-                                <span>EXPERIENCIA</span>
+                                <span>SOBRE MÍ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                className="flex items-center gap-5 opacity-60"
+                            >
+                                <div className="w-30 h-0.5 bg-primary-dark"></div>
+                                <span>PROYECTOS</span>
                             </a>
                         </li>
                         <li>
@@ -88,7 +97,7 @@ function App() {
                                 className="flex items-center gap-5 opacity-60"
                             >
                                 <div className="w-30 h-0.5 bg-primary-dark"></div>
-                                <span>EXPERIENCIA</span>
+                                <span>FORMACIÓN</span>
                             </a>
                         </li>
                         <li>
@@ -97,7 +106,7 @@ function App() {
                                 className="flex items-center gap-5 opacity-60"
                             >
                                 <div className="w-30 h-0.5 bg-primary-dark"></div>
-                                <span>EXPERIENCIA</span>
+                                <span>HABILIDADES TÉCNICAS</span>
                             </a>
                         </li>
                         <li>
@@ -106,16 +115,7 @@ function App() {
                                 className="flex items-center gap-5 opacity-60"
                             >
                                 <div className="w-30 h-0.5 bg-primary-dark"></div>
-                                <span>EXPERIENCIA</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
-                                className="flex items-center gap-5 opacity-60"
-                            >
-                                <div className="w-30 h-0.5 bg-primary-dark"></div>
-                                <span>EXPERIENCIA</span>
+                                <span>CONTACTO</span>
                             </a>
                         </li>
                     </ul>
