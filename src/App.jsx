@@ -34,7 +34,7 @@ function App() {
                     </p>
                 </hgroup>
                 <div className="flex flex-col gap-3">
-                    <p>
+                    <p className="accent">
                         Desarrollo y diseño web de la A a la Z, desde la idea
                         hasta el despliegue.
                     </p>

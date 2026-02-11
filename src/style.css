@@ -66,11 +66,13 @@
     :root {
         --color-text: var(--color-space-indigo-900);
         --color-bg: var(--color-pale-sky-100);
+        --color-accent: var(--color-bubblegum-pink-500);
     }
 
     .dark {
         --color-text: var(--color-pale-sky-100);
         --color-bg: var(--color-space-indigo-900);
+        --color-accent: var(--color-emerald-500);
     }
 
     body {
@@ -85,13 +87,12 @@
     .bg-primary {
         background-color: var(--color-bg);
     }
+    .accent {
+        color: var(--color-accent);
+    }
 }
 
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
-}
-
-button:hover {
-    color: var(--color-emerald-500);
 }
