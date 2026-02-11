@@ -25,9 +25,15 @@
         "eslint-plugin-react-hooks": "^7.0.1",
         "eslint-plugin-react-refresh": "^0.4.24",
         "globals": "^16.5.0",
+        "prettier": "^3.8.1",
+        "prettier-plugin-tailwindcss": "^0.7.2",
         "vite": "^7.2.4"
     },
     "prettier": {
-        "singleQuote": true
+        "singleQuote": true,
+        "plugins": [
+            "prettier-plugin-tailwindcss"
+        ],
+        "tailwindStylesheet": "./src/style.css"
     }
 }

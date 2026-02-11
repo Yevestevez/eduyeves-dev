@@ -8,24 +8,28 @@ function App() {
     const { isDarkMode, toggleTheme } = useTheme();
 
     return (
-        <div className="min-h-screen p-10">
-            <aside>
+        <div className="grid min-h-screen p-10">
+            <aside className="flex">
                 <button
                     type="button"
                     onClick={toggleTheme}
-                    className="px-4 py-2"
+                    className="flex h-12 p-4 px-4 py-2"
                 >
-                    {isDarkMode ? <MdLightMode /> : <MdDarkMode />}
+                    {isDarkMode ? (
+                        <MdLightMode className="size-auto" />
+                    ) : (
+                        <MdDarkMode className="size-auto" />
+                    )}
                 </button>
                 <button disabled>Idioma</button>
             </aside>
 
-            <header className="py-10 flex flex-col gap-10">
+            <header className="flex flex-col gap-10 py-10">
                 <hgroup className="flex flex-col gap-6">
-                    <h1 className="font-extrabold text-6xl font-[inconsolata]">
+                    <h1 className="font-[inconsolata] text-6xl font-extrabold">
                         Edu Yeves
                     </h1>
-                    <p className="font-semibold text-lg">
+                    <p className="text-lg font-semibold">
                         Desarrollador web junior y diseñador gráfico
                     </p>
                 </hgroup>
@@ -39,7 +43,7 @@ function App() {
                         siempre con un ojo puesto en UI/UX
                     </p>
                 </div>
-                <ul className="flex gap-6 items-center py-5">
+                <ul className="flex items-center gap-6 py-5">
                     <li>
                         <a href="#" title="Linkedin" aria-label="Linkedin">
                             <BsLinkedin className="size-6" />
@@ -68,7 +72,7 @@ function App() {
                                 href="#"
                                 className="flex items-center gap-5 font-bold"
                             >
-                                <div className="w-60 h-1 bg-primary-dark"></div>
+                                <div className="bg-primary-dark h-1 w-60"></div>
                                 <span>SOBRE MÍ</span>
                             </a>
                         </li>
@@ -77,7 +81,7 @@ function App() {
                                 href="#"
                                 className="flex items-center gap-5 opacity-60"
                             >
-                                <div className="w-30 h-0.5 bg-primary-dark"></div>
+                                <div className="bg-primary-dark h-0.5 w-30"></div>
                                 <span>PROYECTOS</span>
                             </a>
                         </li>
@@ -86,7 +90,7 @@ function App() {
                                 href="#"
                                 className="flex items-center gap-5 opacity-60"
                             >
-                                <div className="w-30 h-0.5 bg-primary-dark"></div>
+                                <div className="bg-primary-dark h-0.5 w-30"></div>
                                 <span>EXPERIENCIA</span>
                             </a>
                         </li>
@@ -95,7 +99,7 @@ function App() {
                                 href="#"
                                 className="flex items-center gap-5 opacity-60"
                             >
-                                <div className="w-30 h-0.5 bg-primary-dark"></div>
+                                <div className="bg-primary-dark h-0.5 w-30"></div>
                                 <span>FORMACIÓN</span>
                             </a>
                         </li>
@@ -104,7 +108,7 @@ function App() {
                                 href="#"
                                 className="flex items-center gap-5 opacity-60"
                             >
-                                <div className="w-30 h-0.5 bg-primary-dark"></div>
+                                <div className="bg-primary-dark h-0.5 w-30"></div>
                                 <span>HABILIDADES TÉCNICAS</span>
                             </a>
                         </li>
@@ -113,7 +117,7 @@ function App() {
                                 href="#"
                                 className="flex items-center gap-5 opacity-60"
                             >
-                                <div className="w-30 h-0.5 bg-primary-dark"></div>
+                                <div className="bg-primary-dark h-0.5 w-30"></div>
                                 <span>CONTACTO</span>
                             </a>
                         </li>
