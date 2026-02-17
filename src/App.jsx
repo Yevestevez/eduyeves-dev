@@ -8,13 +8,9 @@ function App() {
     const { isDarkMode, toggleTheme } = useTheme();
 
     return (
-        <div className="grid min-h-screen p-10">
-            <aside className="flex">
-                <button
-                    type="button"
-                    onClick={toggleTheme}
-                    className="flex h-12 p-4 px-4 py-2"
-                >
+        <div className="web-container flex flex-col gap-4 p-6">
+            <aside>
+                <button type="button" onClick={toggleTheme}>
                     {isDarkMode ? (
                         <MdLightMode className="size-auto" />
                     ) : (
@@ -24,17 +20,17 @@ function App() {
                 <button disabled>Idioma</button>
             </aside>
 
-            <header className="flex flex-col gap-10 py-10">
-                <hgroup className="flex flex-col gap-6">
-                    <h1 className="font-[inconsolata] text-6xl font-extrabold">
+            <header className="flex flex-col gap-4">
+                <hgroup className="flex flex-col gap-2">
+                    <h1 className="text-secondary font-title text-4xl font-black">
                         Edu Yeves
                     </h1>
-                    <p className="text-lg font-semibold">
-                        Desarrollador web junior y diseñador gráfico
+                    <p className="text-secondary text-sm font-bold">
+                        Desarrollador web y diseñador gráfico
                     </p>
                 </hgroup>
-                <div className="flex flex-col gap-3">
-                    <p className="accent">
+                <div>
+                    <p>
                         Desarrollo y diseño web de la A a la Z, desde la idea
                         hasta el despliegue.
                     </p>
@@ -43,82 +39,48 @@ function App() {
                         siempre con un ojo puesto en UI/UX
                     </p>
                 </div>
-                <ul className="flex items-center gap-6 py-5">
+                <ul className="flex gap-4">
                     <li>
                         <a href="#" title="Linkedin" aria-label="Linkedin">
-                            <BsLinkedin className="size-6" />
+                            <BsLinkedin />
                         </a>
                     </li>
                     <li>
                         <a href="#" title="GitHub" aria-label="GitHub">
-                            <BsGithub className="size-6" />
+                            <BsGithub />
                         </a>
                     </li>
                     <li>
                         <a href="#" title="GitHub" aria-label="GitHub">
-                            <FaBehanceSquare className="size-7" />
+                            <FaBehanceSquare />
                         </a>
                     </li>
                     <li>
                         <a href="#" title="Email" aria-label="email">
-                            <MdEmail className="size-10" />
+                            <MdEmail />
                         </a>
                     </li>
                 </ul>
                 <nav>
-                    <ul className="flex flex-col gap-5 text-sm">
+                    <ul className="flex flex-col gap-2 font-title text-sm">
                         <li>
-                            <a
-                                href="#"
-                                className="flex items-center gap-5 font-bold"
-                            >
-                                <div className="bg-primary-dark h-1 w-60"></div>
+                            <a href="#">
                                 <span>SOBRE MÍ</span>
                             </a>
                         </li>
                         <li>
-                            <a
-                                href="#"
-                                className="flex items-center gap-5 opacity-60"
-                            >
-                                <div className="bg-primary-dark h-0.5 w-30"></div>
+                            <a href="#">
                                 <span>PROYECTOS</span>
                             </a>
                         </li>
                         <li>
-                            <a
-                                href="#"
-                                className="flex items-center gap-5 opacity-60"
-                            >
-                                <div className="bg-primary-dark h-0.5 w-30"></div>
+                            <a href="#">
                                 <span>EXPERIENCIA</span>
                             </a>
                         </li>
                         <li>
-                            <a
-                                href="#"
-                                className="flex items-center gap-5 opacity-60"
-                            >
-                                <div className="bg-primary-dark h-0.5 w-30"></div>
+                            <a href="#">
                                 <span>FORMACIÓN</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
-                                className="flex items-center gap-5 opacity-60"
-                            >
-                                <div className="bg-primary-dark h-0.5 w-30"></div>
-                                <span>HABILIDADES TÉCNICAS</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                href="#"
-                                className="flex items-center gap-5 opacity-60"
-                            >
-                                <div className="bg-primary-dark h-0.5 w-30"></div>
-                                <span>CONTACTO</span>
                             </a>
                         </li>
                     </ul>
@@ -217,13 +179,11 @@ function App() {
                 <section aria-label="Formación">
                     <h2>FORMACIÓN</h2>
                 </section>
-
-                <section aria-label="Contacto">
-                    <h2>CONTACTO</h2>
-                </section>
             </main>
 
-            <footer></footer>
+            <footer>
+                <p>footer</p>
+            </footer>
         </div>
     );
 }

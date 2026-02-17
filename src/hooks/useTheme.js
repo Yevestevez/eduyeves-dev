@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 
 export function useTheme() {
     const [isDarkMode, setIsDarkMode] = useState(() => {
-        // Leer del localStorage al inicializar
         if (typeof window !== 'undefined') {
             return localStorage.getItem('theme') === 'dark';
         }

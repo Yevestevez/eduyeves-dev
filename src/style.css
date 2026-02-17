@@ -1,29 +1,32 @@
 @import 'tailwindcss';
 
 @theme {
-    --color-space-indigo-50: oklch(94.93% 0.015 286.12);
-    --color-space-indigo-100: oklch(89.54% 0.031 285.75);
-    --color-space-indigo-200: oklch(79.11% 0.062 284.89);
-    --color-space-indigo-300: oklch(68.28% 0.098 283.5);
-    --color-space-indigo-400: oklch(57.37% 0.136 281.23);
-    --color-space-indigo-500: oklch(46.71% 0.174 277.3);
-    --color-space-indigo-600: oklch(40.08% 0.144 277.68);
-    --color-space-indigo-700: oklch(33.17% 0.113 278.26);
-    --color-space-indigo-800: oklch(25.9% 0.08 279.26);
-    --color-space-indigo-900: oklch(17.88% 0.046 280.64);
-    --color-space-indigo-950: oklch(15.49% 0.034 281.74);
+    --font-primary: 'Fira Code', monospace;
+    --font-title: Inconsolata, monospace;
 
-    --color-pale-sky-50: oklch(95.93% 0.007 247.9);
-    --color-pale-sky-100: oklch(91.65% 0.016 257.2);
-    --color-pale-sky-200: oklch(83.35% 0.031 254.34);
-    --color-pale-sky-300: oklch(74.71% 0.049 255.4);
-    --color-pale-sky-400: oklch(66.13% 0.066 254.58);
-    --color-pale-sky-500: oklch(57.22% 0.086 255.31);
-    --color-pale-sky-600: oklch(48.94% 0.071 254.78);
-    --color-pale-sky-700: oklch(40.04% 0.056 255.62);
-    --color-pale-sky-800: oklch(30.89% 0.04 254.7);
-    --color-pale-sky-900: oklch(20.7% 0.023 257.29);
-    --color-pale-sky-950: oklch(17.59% 0.017 256.84);
+    --color-space-indigo-50: oklch(95.17% 0.012 286.17);
+    --color-space-indigo-100: oklch(90.02% 0.026 285.87);
+    --color-space-indigo-200: oklch(79.83% 0.053 285.13);
+    --color-space-indigo-300: oklch(69.44% 0.083 284.02);
+    --color-space-indigo-400: oklch(58.88% 0.115 282.29);
+    --color-space-indigo-500: oklch(48.32% 0.148 279.34);
+    --color-space-indigo-600: oklch(41.41% 0.123 279.58);
+    --color-space-indigo-700: oklch(34.2% 0.097 279.96);
+    --color-space-indigo-800: oklch(26.6% 0.069 280.61);
+    --color-space-indigo-900: oklch(18.44% 0.038 281.97);
+    --color-space-indigo-950: oklch(15.73% 0.027 282.79);
+
+    --color-powder-blue-50: oklch(95.88% 0.009 247.92);
+    --color-powder-blue-100: oklch(91.56% 0.019 255.54);
+    --color-powder-blue-200: oklch(82.99% 0.039 255.63);
+    --color-powder-blue-300: oklch(74.31% 0.06 255.71);
+    --color-powder-blue-400: oklch(65.53% 0.083 255.82);
+    --color-powder-blue-500: oklch(56.97% 0.105 255.27);
+    --color-powder-blue-600: oklch(48.44% 0.088 256.02);
+    --color-powder-blue-700: oklch(39.76% 0.07 255.99);
+    --color-powder-blue-800: oklch(30.58% 0.05 255.94);
+    --color-powder-blue-900: oklch(20.65% 0.028 255.84);
+    --color-powder-blue-950: oklch(17.56% 0.019 255.78);
 
     --color-emerald-50: oklch(97.46% 0.023 165.87);
     --color-emerald-100: oklch(94.96% 0.047 165.76);
@@ -64,25 +67,30 @@
 
 @layer base {
     :root {
-        --color-text: var(--color-space-indigo-900);
-        --color-bg: var(--color-pale-sky-100);
+        --color-text: var(--color-space-indigo-800);
+        --color-text-secondary: var(--color-space-indigo-900);
+        --color-bg: var(--color-powder-blue-300);
         --color-accent: var(--color-bubblegum-pink-500);
     }
 
     .dark {
-        --color-text: var(--color-pale-sky-100);
+        --color-text: var(--color-powder-blue-300);
+        --color-text-secondary: var(--color-powder-blue-100);
         --color-bg: var(--color-space-indigo-900);
         --color-accent: var(--color-emerald-500);
     }
 
     body {
-        font-family: 'Fira Code' monospace;
+        font-family: var(--font-primary);
     }
 }
 
 @layer utilities {
     .text-primary {
         color: var(--color-text);
+    }
+    .text-secondary {
+        color: var(--color-text-secondary);
     }
     .bg-primary {
         background-color: var(--color-bg);
